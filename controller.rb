@@ -14,3 +14,7 @@ get '/:player1/:player2' do
   @result = game.play()
   erb(:result)
 end
+
+get '/welcome' do
+  erb(:welcome)
+end
